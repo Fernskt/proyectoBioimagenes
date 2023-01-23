@@ -85,6 +85,9 @@ img {
 .contenido_header{
     background-color: rgba(3, 1, 14, 0.61);
     height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .header {
     
@@ -122,6 +125,7 @@ img {
 
 .logo {
     color: var(--blanco);
+    
 }
 @media (min-width: 768px) {
     .logo__nombre{
@@ -131,7 +135,7 @@ img {
 .logo__nombre {
     font-weight: normal;
     font-size: 3.5rem;
-    
+    margin-bottom: 1rem;
     text-transform: uppercase;
 }
 
@@ -152,7 +156,23 @@ img {
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
+    line-height: 2;
 }
+.indice{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--primario);
+}
+
+@media (max-width: 768px) {
+    .indice_inv{
+        order: 2;
+    }
+    .indice_inv2{
+        order: 1;
+    }
+}
+
 @media (min-width: 768px) {
     .indice{
         display: grid;
@@ -162,9 +182,9 @@ img {
      
 }
 
-.indice{
-    background-color: var(--primario);
-}
+
+
+
 
 @media (min-width: 768px) {
     .parrafo{
@@ -179,6 +199,7 @@ img {
     color: var(--blanco);
     max-width: 50rem;
     margin: 3rem;
+    padding-bottom: 3rem;
    
 }
 .encabezado h1{
